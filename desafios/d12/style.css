@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*Zerando todos elementos*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Formatação do corpo do site*/
+html, body {
+    min-height: 100vh;
+    /*tamanho minino de 100% da view port height*/
+    background-color: darkgray;
+
+}
+
+/*Formatação do cabeçalho do site*/
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+header a :hover, footer a:hover {
+    text-decoration: underline;
+}
+/*Para efeito paralax*/
+section {
+    /*view port height*/
+    padding-top: 10vh; 
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+/*Formatação da secção do site*/
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(85, 84, 84);
+    color: white;
+}
+/* caixa preta dentro da section*/
+section.imagem > p {
+    background-color: rgb(55, 53, 53);
+    width: 400px;
+}
+
+/*Formatação do titulo do site site*/
+h1 {}
+
+/*Formatação do paragrafo do site*/
+p {}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
