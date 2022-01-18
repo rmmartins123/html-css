@@ -4,12 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2? family= Courgette & display=swap');
 
-
-
-
-
-
-
 /*Zerando todos elementos*/
 * {
     padding: 0px;
@@ -84,19 +78,35 @@ section.imagem {
     background-color: rgb(85, 84, 84);
     color: white;
     padding: 5px;
+    box-shadow: inset rgb(53, 53, 53) 6px 6px 13px 0px;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('../d12/imagens/background001.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../d12/imagens/background002.jpg');
+    background-position: center center;
+    background-size: cover;
 }
 
 /* caixa preta dentro da section*/
 section.imagem > p {
-    background-color: rgb(55, 53, 53);
+    background-color: rgba(14, 12, 12, 0.3);
     display: inline-block;
+    text-shadow: 1px 1px 0px black;
 }
 
-/*Formatação do titulo do site site*/
-h1 {}
-
 /*Formatação do paragrafo do site*/
-p {}
+section > p {
+    padding-bottom: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 footer {
     background-color: black;
