@@ -1,15 +1,34 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Raleway:ital,wght@1,300 & family= Titillium+Web:ital@1 & family= Ubuntu: wght@500 & display=trocar');
+
+@import url('https://fonts.googleapis.com/css2? family= Courgette & display=swap');
+
+
+
+
+
+
+
 /*Zerando todos elementos*/
 * {
     padding: 0px;
     margin: 0px;
 }
 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; 
+    --fonte2: família de fontes: 'Bebas Neue', cursiva;
+    --fonte3: font-family: 'Courgette', cursiva;
+
+
+}
+
 /*Formatação do corpo do site*/
 html, body {
-    min-height: 100vh;
-    /*tamanho minino de 100% da view port height*/
+
+    font-family: var(--fonte1);
+    min-height: 100vh;/*tamanho minino de 100% da view port height*/
     background-color: darkgray;
 
 }
@@ -22,8 +41,13 @@ header {
 }
 
 header > h1 {
+
+    font-family: var(--fonte2);
     padding-top: 50px;
     font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 5vw;
+
 }
 
 header > p {
@@ -42,10 +66,12 @@ header a :hover, footer a:hover {
 /*Para efeito paralax*/
 section {
     /*view port height*/
+    font-family: var(--fonte3);
     padding-top: 10vh; 
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3vw;
 }
 
 /*Formatação da secção do site*/
@@ -57,11 +83,13 @@ section.normal {
 section.imagem {
     background-color: rgb(85, 84, 84);
     color: white;
+    padding: 5px;
 }
+
 /* caixa preta dentro da section*/
 section.imagem > p {
     background-color: rgb(55, 53, 53);
-    width: 400px;
+    display: inline-block;
 }
 
 /*Formatação do titulo do site site*/
