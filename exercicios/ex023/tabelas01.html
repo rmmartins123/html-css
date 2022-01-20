@@ -26,6 +26,22 @@
             text-align: right;
         }
 
+        caption {
+            background-color: rgb(158, 154, 154);
+            padding: 10px;
+            font-weight: bolder;
+            font-size: 15pt;
+        }
+
+        tbody>tr:nth-child(odd) {
+            background-color: white;
+
+        }
+
+        tbody>tr:nth-child(even) {
+            background-color: gray;
+        }
+
         thead,
         tfoot {
             background-color: gray;
@@ -36,10 +52,11 @@
 
 <body>
     <table>
+        <caption>População da Unidade Federativa</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
