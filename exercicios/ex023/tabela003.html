@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 13 Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        th,
+        td {
+            border: black solid 1px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        th {
+            background-color: #a99c9c;
+        }
+
+        td {
+            background-color: #d3d3d3;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: #ee0707;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mesclagem de Tabelas</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th>Nomes</th>
+                <th colspan="4">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Ana maria Cavalcanti</td>
+                <td>maguina mortal</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz lima</td>
+                <td>Guerra do amanha</td>
+                <td>Libertos</td>
+                <td>Rambo3</td>
+                <td>Vingadores o retorno</td>
+            </tr>
+            <tr>
+                <td>Maria da Paz</td>
+                <td>Guerra furiosa</td>
+                <td>Libertos do pecado</td>
+                <td>A mentira</td>
+                <td>O retorno do Batman</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3">Homens</th>
+                <td>Ana maria de lima</td>
+                <td>Maguina mortal</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>João Gomes</td>
+                <td>Maguina mortal</td>
+                <td>Alien 3</td>
+                <td>Rambo 4</td>
+                <td>Vingadores do espaço</td>
+            </tr>
+            <tr>
+                <td>Ricardo Sampaio</td>
+                <td>A coisa</td>
+                <td>Mortal Kombat</td>
+                <td>A fortaleza</td>
+                <td>A atividade</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+</body>
+
+</html>
